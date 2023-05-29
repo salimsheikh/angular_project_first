@@ -11,6 +11,60 @@
       "password": "123",
       "email": "rajeshl@seller.com",
       "id": 2
+    },
+    {
+      "name": "sfdasfdasf",
+      "password": "dsadas",
+      "email": "ddsadasdfd",
+      "id": 3
+    },
+    {
+      "name": "dasfdsaf",
+      "password": "dasfdasf",
+      "email": "fdafadsf",
+      "id": 4
+    },
+    {
+      "name": "dasfdsaf",
+      "password": "dasfdasf",
+      "email": "fdafadsf",
+      "id": 5
+    },
+    {
+      "name": "dasfdsaf",
+      "password": "dasfdasf",
+      "email": "fdafadsf",
+      "id": 6
+    },
+    {
+      "name": "ffdsfdasf",
+      "password": "dsfdasf",
+      "email": "dasfdsafdasf",
+      "id": 7
+    },
+    {
+      "name": "dfdsfdasf",
+      "password": "dsfdasfdasd",
+      "email": "safdsafads",
+      "id": 8
+    },
+    {
+      "name": "fdsfdsafdsafds",
+      "password": "fdsfdsaf",
+      "email": "dsafdasfdasf",
+      "id": 9
+    },
+    {
+      "name": "fdsfdsafdasfds",
+      "password": "fdsfadsfdasf",
+      "email": "dfsfdsafdasf",
+      "id": 10
+    },
+    {
+      "name": "fdsfadsfdsaf",
+      "password": "dsfdasfadsfdas",
+      "email": "fdsfdasf",
+      "id": 11
     }
   ],
   "posts": [
