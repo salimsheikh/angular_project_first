@@ -10,23 +10,26 @@ import { SignUpDataType } from '../data-type';
 })
 export class SellerAuthComponent implements OnInit {
   constructor(private seller: SellerService, private router: Router) { }
+
+  showLogin = false;
+
   ngOnInit(): void {
     this.seller.reloadSeller();
   }
 
-  /*
-  paramiter data:object|any
-  */
   submitSellerSignUp(data: SignUpDataType): void {
-    /*
-    this.seller.userSignUpService(data).subscribe((results) => {
-      if(results){
-        this.router.navigate(["seller-home"]);
-      }
-    });
-    */
-
     this.seller.userSignUpService(data);
+  }
 
+  submitSellerLogin(data: SignUpDataType): void {
+    console.warn(data);
+  }
+
+  openLogin() {
+    this.showLogin = true;
+  }
+
+  openSignUp() {
+    this.showLogin = false;
   }
 }
