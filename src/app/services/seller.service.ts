@@ -22,9 +22,7 @@ export class SellerService {
   sellerLoginService(data: SellerLoginDataType) {
     localStorage.setItem('seller', '');
     let login_url = 'http://localhost:3000/seller?email=' + data.email + '&password=' + data.password;
-    console.warn(login_url);
     let results = this.http.get(login_url, { observe: 'response' }).subscribe((result: any) => {
-      console.warn(result);
       if (result.body && result.body.length > 0) {
         this.isSellerLoggedIn.next(true);
         localStorage.setItem('seller', JSON.stringify(result.body));
@@ -38,11 +36,9 @@ export class SellerService {
   }
 
   logout() {
-    if (localStorage.getItem('seller')) {
-      localStorage.setItem('seller', '');
-      this.isSellerLoggedIn.next(false);
-      this.router.navigate(['seller-login']);
-    }
+    localStorage.removeItem('seller');
+    this.isSellerLoggedIn.next(false);
+    this.router.navigate(['/']);
   }
 
   reloadSeller() {

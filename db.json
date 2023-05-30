@@ -11,56 +11,7 @@
       "password": "123",
       "email": "rajeshl@seller.com",
       "id": 2
-    },
-    {
-      "name": "",
-      "password": "",
-      "email": "",
-      "id": 3
-    },
-    {
-      "name": "",
-      "password": "",
-      "email": "",
-      "id": 4
-    },
-    {
-      "name": "fdsfdas",
-      "password": "fdasfsda",
-      "email": "fdsafdasf",
-      "id": 5
-    },
-    {
-      "name": "fdasfdasf",
-      "password": "fdsfdasfdsa",
-      "email": "fdasfdasf",
-      "id": 6
-    },
-    {
-      "name": "",
-      "password": "",
-      "email": "",
-      "id": 7
-    },
-    {
-      "email": "test",
-      "password": "test",
-      "id": 8
-    }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
+    }    
   ],
   "profile": {
     "name": "typicode"
