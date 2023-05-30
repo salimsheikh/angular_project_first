@@ -42,6 +42,7 @@
 
   <div *ngIf="showLogin" class="login">
     <h1>Seller Loign</h1>
+    <p *ngIf="authError" class="form-error">{{ authError }}</p>
     <form
       #sellerLogin="ngForm"
       class="common-form"
@@ -49,7 +50,7 @@
     >
       <input
         class="form-text"
-        type="text"
+        type="email"
         name="email"
         ngModel
         placeholder="Enter Email"

@@ -8,7 +8,7 @@ import { inject } from '@angular/core';
 export const authGuard: CanActivateFn = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
   const sellerService = inject(SellerService);
 
-
+  //localStorage.setItem('seller', '');
   if (localStorage.getItem('seller')) {
     sellerService.isSellerLoggedIn.next(true);
     return true;

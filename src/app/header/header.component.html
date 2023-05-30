@@ -12,6 +12,14 @@
   <ul>
     <li><a routerLink="">Home</a></li>
     <li><a routerLink="seller-auth">Seller</a></li>
+    <li *ngIf="showSellerLogout">
+      <a routerLink="seller-login">Seller Login</a>
+    </li>
+
+    <li *ngIf="!showSellerLogout">
+      <a routerLink="seller-logout">Seller Logout</a>
+    </li>
+
     <li><a href="#">Login</a></li>
   </ul>
 </nav>

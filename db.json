@@ -35,6 +35,17 @@
       "password": "fdsfdasfdsa",
       "email": "fdasfdasf",
       "id": 6
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 7
+    },
+    {
+      "email": "test",
+      "password": "test",
+      "id": 8
     }
   ],
   "posts": [

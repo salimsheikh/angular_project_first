@@ -9,11 +9,19 @@ import { SignUpDataType } from '../data-type';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent implements OnInit {
+
   constructor(private seller: SellerService, private router: Router) { }
 
   showLogin = false;
+  authError = '';
 
   ngOnInit(): void {
+    if (this.router.url == "/seller-login") {
+      this.showLogin = true;
+    } else if (this.router.url == "/seller-logout") {
+      this.showLogin = true;
+      this.seller.logout();
+    }
     this.seller.reloadSeller();
   }
 
@@ -22,7 +30,23 @@ export class SellerAuthComponent implements OnInit {
   }
 
   submitSellerLogin(data: SignUpDataType): void {
-    console.warn(data);
+    this.authError = '';
+    if (data.email == "") {
+      this.authError = 'Enter your email.';
+    }
+
+    if (data.password == "") {
+      this.authError = 'Enter your login password.';
+    }
+
+    if (this.authError == "") {
+      this.seller.sellerLoginService(data);
+      this.seller.isLoginError.subscribe((error) => {
+        if (error) {
+          this.authError = 'Email or password is invalid';
+        }
+      });
+    }
   }
 
   openLogin() {
