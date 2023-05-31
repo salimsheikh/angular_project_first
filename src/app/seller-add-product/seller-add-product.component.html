@@ -5,6 +5,9 @@
     #addProduct="ngForm"
     (ngSubmit)="submit(addProduct.value)"
   >
+    <p *ngIf="form_alert_message" class="form-alert {{ form_alert_type }}">
+      {{ form_alert_message }}
+    </p>
     <input
       class="form-text"
       type="text"

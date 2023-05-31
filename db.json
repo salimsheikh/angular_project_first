@@ -11,9 +11,26 @@
       "password": "123",
       "email": "rajeshl@seller.com",
       "id": 2
-    }    
+    }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "products": [
+    {
+      "name": "i-phone 14",
+      "price": 120000,
+      "category": "Mobiles",
+      "color": "black",
+      "image": "abc",
+      "description": "test note for product",
+      "id": 1
+    },
+    {
+      "name": "Samsung",
+      "price": "25000",
+      "color": "black",
+      "description": "product description",
+      "category": "Mobiles",
+      "image": "image.jpg",
+      "id": 2
+    }
+  ]
 }
