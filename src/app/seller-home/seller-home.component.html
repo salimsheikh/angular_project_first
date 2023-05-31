@@ -1,6 +1,8 @@
 <div class="product-list">
   <h1>Product List</h1>
-
+  <p *ngIf="form_alert_message" class="form-alert {{ form_alert_type }}">
+    {{ form_alert_message }}
+  </p>
   <table>
     <thead>
       <tr>
@@ -10,6 +12,7 @@
         <th>Color</th>
         <th>Category</th>
         <th>Description</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +23,7 @@
         <td>{{ item.color }}</td>
         <td>{{ item.category }}</td>
         <td>{{ item.description }}</td>
+        <td><button (click)="deleteProduct(item.id)">Delete</button></td>
       </tr>
     </tbody>
   </table>

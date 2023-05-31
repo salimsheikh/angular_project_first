@@ -9,6 +9,9 @@ import { productDataType } from '../data-type';
 })
 export class SellerHomeComponent {
 
+  form_alert_message: string | undefined;
+  form_alert_type: string | undefined;
+
   productList: undefined | productDataType[];
 
   constructor(private productservice: ProductService) { }
@@ -19,8 +22,22 @@ export class SellerHomeComponent {
 
   getProductList() {
     this.productservice.getPorductList().subscribe((results) => {
-      console.warn(results);
       this.productList = results;
+    });
+  }
+
+  deleteProduct(id: number) {
+    console.log("ID" + id);
+
+    this.productservice.deleteProduct(id).subscribe((result) => {
+      if (result) {
+        this.form_alert_type = "alert-success";
+        this.form_alert_message = "Product is deleted";
+        setTimeout(() => {
+          this.form_alert_message = "";
+        }, 3000);
+        this.getProductList();
+      }
     });
   }
 }

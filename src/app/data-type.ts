@@ -10,6 +10,7 @@ export interface SellerLoginDataType {
 }
 
 export interface productDataType {
+    "id": number,
     "name": string,
     "price": number,
     "category": string,
