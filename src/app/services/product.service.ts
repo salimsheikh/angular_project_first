@@ -9,8 +9,11 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  addProductService(data: productDataType) {
-    console.warn("Service called");
+  addProduct(data: productDataType) {
     return this.http.post("http://localhost:3000/products", data);
+  }
+
+  getPorductList() {
+    return this.http.get<productDataType[]>("http://localhost:3000/products");
   }
 }

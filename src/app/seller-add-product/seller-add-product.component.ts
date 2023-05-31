@@ -25,7 +25,7 @@ export class SellerAddProductComponent {
       this.form_alert_type = "alert-info";
       this.form_alert_message = "Please Wait!";
 
-      this.productservice.addProductService(data).subscribe((result) => {
+      this.productservice.addProduct(data).subscribe((result) => {
         if (result) {
           this.form_alert_type = "alert-success";
           this.form_alert_message = "Product is successfully added.";
