@@ -16,11 +16,11 @@
   "products": [
     {
       "name": "iPhone 14 Plus",
-      "price": 80999,
-      "category": "Mobiles",
+      "price": "80999.00",
       "color": "Blue",
-      "image": "https://i0.wp.com/maplestore.in/wp-content/uploads/2023/05/iphone-14-finish-select-202209-6-7inch-blue_AV1_GEO_EMEA-jpeg-webp.webp?fit=2048%2C2048&ssl=1",
       "description": "iPhone 14 Plus. Now that’s big.",
+      "category": "Mobiles",
+      "image": "https://i0.wp.com/maplestore.in/wp-content/uploads/2023/05/iphone-14-finish-select-202209-6-7inch-blue_AV1_GEO_EMEA-jpeg-webp.webp?fit=2048%2C2048&ssl=1",
       "id": 1
     },
     {
@@ -34,9 +34,9 @@
     },
     {
       "name": "Galaxy M14 5G (6GB RAM)",
-      "price": "15990.00",
+      "price": "15991.00",
       "color": "Icy Silver",
-      "description": "No Cost EMI starts from ₹ 2420.80/ month.",
+      "description": "No Cost EMI starts from ₹ 2420.80/ month. test 2",
       "category": "Mobiles",
       "image": "//images.samsung.com/is/image/samsung/p6pim/in/sm-m146bzshins/gallery/in-galaxy-m-sm-m146bzshins-front-silver-536289028?$2052_1641_PNG$",
       "id": 3

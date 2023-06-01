@@ -1,0 +1,63 @@
+<div class="update-product">
+  <h1>Update product</h1>
+  <form
+    class="common-form"
+    #updateProduct="ngForm"
+    (ngSubmit)="submit(updateProduct.value)"
+  >
+    <p *ngIf="form_alert_message" class="form-alert {{ form_alert_type }}">
+      {{ form_alert_message }}
+    </p>
+    <input
+      class="form-text"
+      type="text"
+      name="name"
+      ngModel="{{ productData?.name }}"
+      placeholder="Enter Product Name"
+    />
+
+    <input
+      class="form-text"
+      type="text"
+      name="price"
+      ngModel="{{ productData?.price }}"
+      placeholder="Enter Product price"
+    />
+
+    <input
+      class="form-text"
+      type="text"
+      name="color"
+      ngModel="{{ productData?.color }}"
+      placeholder="Enter Product color"
+    />
+
+    <textarea
+      class="form-text"
+      type="text"
+      name="description"
+      ngModel="{{ productData?.description }}"
+      placeholder="Enter Product description"
+    ></textarea>
+
+    <input
+      class="form-text"
+      type="text"
+      name="category"
+      ngModel="{{ productData?.category }}"
+      placeholder="Enter Product category"
+    />
+
+    <input
+      class="form-text"
+      type="text"
+      name="image"
+      ngModel="{{ productData?.image }}"
+      placeholder="Enter Product image URL"
+    />
+
+    <button class="form-button" type="submit" name="add_product_button">
+      Update Product
+    </button>
+  </form>
+</div>

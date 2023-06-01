@@ -9,3 +9,11 @@ table th, table td{
     border:1px solid blueviolet;
     padding: 10px;
 }
+
+table td.action-column{
+    text-align: center;
+}
+
+.edit-product-link{
+    margin-left: 10px;;
+}

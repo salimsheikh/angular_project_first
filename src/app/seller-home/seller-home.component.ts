@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { productDataType } from '../data-type';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-seller-home',
   templateUrl: './seller-home.component.html',
@@ -12,6 +13,7 @@ export class SellerHomeComponent {
   form_alert_message: string | undefined;
   form_alert_type: string | undefined;
   delete_icon = faTrash;
+  edit_icon = faEdit;
   productList: undefined | productDataType[];
 
   constructor(private productservice: ProductService) { }
