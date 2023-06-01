@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Install Bootstrap
+
+Goto https://ng-bootstrap.github.io/#/home
+
+https://ng-bootstrap.github.io/#/getting-started
+
+ng add @ng-bootstrap/ng-bootstrapj
+
+if any issue got, than run below comman, after complete install bootstrap again
+
+npm uninstall @schematics/angular
+
+if agan not install use below and than try again for bootstrap
+
+npm config set legacy-peer-deps true
+
+## Carousel
+
+https://ng-bootstrap.github.io/#/components/carousel/examples
